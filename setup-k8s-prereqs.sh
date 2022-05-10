@@ -13,7 +13,7 @@ cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
-KUBE_DPKG_VERSION=1.24
+KUBE_DPKG_VERSION=1.23
 DOCKER_VERSION= 18.09.7ubuntu1~20.4
 
 apt-get update
