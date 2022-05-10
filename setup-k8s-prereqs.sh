@@ -31,6 +31,11 @@ systemctl restart docker
 
 apt-get install -y apt-transport-https
 apt-get install kubelet kubeadm kubectl
+
+
+======== upto worker node and add the token from master =======
+
+
 apt-mark hold docker.io kubelet kubeadm kubectl
 
 # curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
