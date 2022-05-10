@@ -14,7 +14,7 @@ deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
 KUBE_DPKG_VERSION=1.24.0
-DOCKER_VERSION=19.03.15-0ubuntu1~22.04 LTS
+DOCKER_VERSION=19.03.15-0ubuntu1~22.04
 
 apt-get update
 apt-get install -y ebtables ethtool
