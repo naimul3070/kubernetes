@@ -13,8 +13,8 @@ cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
-KUBE_DPKG_VERSION=1.18.2-00
-DOCKER_VERSION=18.09.7-0ubuntu1~18.04.4
+KUBE_DPKG_VERSION=1.24
+DOCKER_VERSION= 20.10. 7ubuntu1~20.4
 
 apt-get update
 apt-get install -y ebtables ethtool
