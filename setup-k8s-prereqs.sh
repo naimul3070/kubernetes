@@ -13,12 +13,12 @@ cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
-KUBE_DPKG_VERSION= 1.24.0
-DOCKER_VERSION= 20.10.15
+# KUBE_DPKG_VERSION= 1.24.0
+# DOCKER_VERSION= 20.10.15
 
 apt-get update
 apt-get install -y ebtables ethtool
-apt-get install -y docker.io=$DOCKER_VERSION
+apt-get install -y docker.io
 
 cat <<EOF >/etc/docker/daemon.json
 {
@@ -30,7 +30,7 @@ systemctl daemon-reload
 systemctl restart docker
 
 apt-get install -y apt-transport-https
-apt-get install -y kubelet=$KUBE_DPKG_VERSION kubeadm=$KUBE_DPKG_VERSION kubectl=$KUBE_DPKG_VERSION
+apt-get install -y kubelet kubeadm kubectl
 apt-mark hold docker.io kubelet kubeadm kubectl
 
 # curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
