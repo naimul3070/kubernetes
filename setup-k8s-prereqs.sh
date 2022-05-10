@@ -30,7 +30,7 @@ systemctl daemon-reload
 systemctl restart docker
 
 apt-get install -y apt-transport-https
-apt-get install -y kubelet kubeadm kubectl
+apt-get install kubelet kubeadm kubectl
 apt-mark hold docker.io kubelet kubeadm kubectl
 
 # curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
