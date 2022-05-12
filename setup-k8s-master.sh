@@ -5,6 +5,14 @@
 # KUBE_VERSION=1.23
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
+
+======================= for add multiple worker need to remvoe previus token and genaarate new=====================  BY-=================
+
+sudo kubeadm token create --print-join-command
+
+
+========================     ========================================
+
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
