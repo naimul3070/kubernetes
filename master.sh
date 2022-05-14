@@ -1,5 +1,7 @@
+
 #!/bin/sh -x
 
+apt-get update
 apt-get install -y curl openssh-server
 
 echo $(hostname -i) $(hostname) >> /etc/hosts
@@ -26,16 +28,8 @@ systemctl restart docker
 
 apt-get install -y apt-transport-https
 apt-get install kubelet
-
-=== press Y for contnue ===
-
 apt-get install kubeadm
-
-=== press Y for contnue ===
-
 apt-get install kubectl
-
-=== press Y for contnue ===
 
 apt-mark hold docker.io kubelet kubeadm kubectl
 
@@ -46,8 +40,8 @@ sudo systemctl enable kubelet
 if [ "$UBUNTU_CODENAME" = "bionic" ]; then
     modprobe br_netfilter
 fi
-sysctl net.bridge.bridge-nf-call-iptables=1
 
+sysctl net.bridge.bridge-nf-call-iptables=1
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
