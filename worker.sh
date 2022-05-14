@@ -30,22 +30,9 @@ systemctl daemon-reload
 systemctl restart docker
 
 apt-get install -y apt-transport-https
-apt-get install kubelet kubeadm kubectl
+apt-get install kubelet 
+apt-get install kubeadm
+apt-get install kubectl
 
 
 ======== upto worker node and add the token from master =======
-
-
-apt-mark hold docker.io kubelet kubeadm kubectl
-
-# curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
-# curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
-
-sudo systemctl enable docker
-sudo systemctl enable kubelet
-
-. /etc/os-release
-if [ "$UBUNTU_CODENAME" = "bionic" ]; then
-    modprobe br_netfilter
-fi
-sysctl net.bridge.bridge-nf-call-iptables=1
