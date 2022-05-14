@@ -21,7 +21,7 @@
     
 ### and
     
-    cd /kubernatis
+    cd kubernatis/
     
 #### give permisson the .sh file by run the command in (nust first move to the directory)
 
@@ -61,7 +61,7 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
     
 ### and
     
-    cd /kubernatis
+    cd kubernatis/
     
 #### give permisson the .sh file by run the command in (nust first move to the directory)
 
