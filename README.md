@@ -15,13 +15,15 @@
 
     git clone https://github.com/naimul3070/kubernatis.git
 
+#### First give permisson the .sh file by run the command in (nust first move to the directory)
+
+    ls
+    cd /kubernatis
+    chmod +x master.sh
+    
 #### Go to Master by using the comand
 
     sudo su -
-
-#### First give permisson the .sh file by run the command in (nust first move to the directory)
-
-    chmod +x master.sh
 
 #### Then run the .sh file for install the master node 
      
@@ -46,13 +48,15 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 
     git clone https://github.com/naimul3070/kubernatis.git
     
+
+#### First give permisson the .sh file by run the command in (nust first move to the directory)
+    ls
+    cd /kubernatis
+    chmod +x worker.sh
+    
 #### First go to root Worker by using the comand
 
     sudo su -
-
-#### First give permisson the .sh file by run the command in (nust first move to the directory)
-
-    chmod +x worker.sh
 
 #### Then run the .sh file for install the master node 
      
