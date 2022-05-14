@@ -18,7 +18,9 @@
 #### First give permisson the .sh file by run the command in (nust first move to the directory)
 
     ls
+    
     cd /kubernatis
+    
     chmod +x master.sh
     
 #### Go to Master by using the comand
@@ -51,7 +53,9 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 
 #### First give permisson the .sh file by run the command in (nust first move to the directory)
     ls
+    
     cd /kubernatis
+    
     chmod +x worker.sh
     
 #### First go to root Worker by using the comand
