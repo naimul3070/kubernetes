@@ -73,12 +73,12 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
     sudo apt upgrade -y
     ./worker.sh
 
+### If this is the first worker node then just follow the instracton in  ### 1st worker block and
+
 #### Check in master node by the command 
 
     kubectl get node
     
-### If this is the first worker node then just follow the instracton in  ## 1st worker block
-
 # for multiple worker node
 
 ## after imstallation worker node need to create new token in master node and copy the token then run it in worker node.
