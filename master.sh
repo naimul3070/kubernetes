@@ -1,8 +1,6 @@
 
-#!/bin/sh -x
-
-apt-get update
 apt-get install -y curl openssh-server
+
 
 echo $(hostname -i) $(hostname) >> /etc/hosts
 sudo sed -i "/swap/s/^/#/" /etc/fstab
@@ -14,6 +12,8 @@ deb http://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
 apt-get update
+
+
 apt-get install -y ebtables ethtool
 apt-get install -y docker.io
 
@@ -27,9 +27,7 @@ systemctl daemon-reload
 systemctl restart docker
 
 apt-get install -y apt-transport-https
-apt-get install kubelet
-apt-get install kubeadm
-apt-get install kubectl
+apt-get install kubelet kubeadm kubectl
 
 apt-mark hold docker.io kubelet kubeadm kubectl
 
@@ -40,7 +38,6 @@ sudo systemctl enable kubelet
 if [ "$UBUNTU_CODENAME" = "bionic" ]; then
     modprobe br_netfilter
 fi
-
 sysctl net.bridge.bridge-nf-call-iptables=1
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
