@@ -14,13 +14,17 @@
 #### FOR EASY Installation we have create the sh file. Just clone the git repo in master node by run the command
 
     git clone https://github.com/naimul3070/kubernatis.git
-
-#### First give permisson the .sh file by run the command in (nust first move to the directory)
+    
+### Get into the clone folde by run the command 
 
     ls
     
+### and
+    
     cd /kubernatis
     
+#### give permisson the .sh file by run the command in (nust first move to the directory)
+
     chmod +x master.sh
     
 #### Go to Master by using the comand
@@ -51,23 +55,28 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
     git clone https://github.com/naimul3070/kubernatis.git
     
 
-#### First give permisson the .sh file by run the command in (nust first move to the directory)
+### Get into the clone folde by run the command 
+
     ls
+    
+### and
     
     cd /kubernatis
     
+#### give permisson the .sh file by run the command in (nust first move to the directory)
+
     chmod +x worker.sh
-    
-#### First go to root Worker by using the comand
-
-    sudo su -
-
+ 
 #### Then run the .sh file for install the master node 
      
     sudo apt update
     sudo apt upgrade -y
     ./worker.sh
 
+#### Check in master node by the command 
+
+    kubectl get node
+    
 ### If this is the first worker node then just follow the instracton in  ## 1st worker block
 
 # for multiple worker node
