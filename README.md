@@ -42,8 +42,10 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 
 ## For Worker Node 
 
-### FOR EASY Installation we have create the sh file. Just download them and run them 
+### FOR EASY Installation we have create the sh file. just clone the repo using the git comand 
 
+    git clone https://github.com/naimul3070/kubernatis.git
+    
 #### First go to root Worker by using the comand
 
     sudo su -
