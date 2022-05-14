@@ -1,5 +1,9 @@
 ## Welcoem to iBOS DevOps Team.
 
+#Prerequisites
+## linux (Ubunto 20.4.4 LTS
+## Fresh new OS (without install any service)
+
 ### Installation Guide Kubernetes A to Z
 
 ### For Master Node
@@ -7,9 +11,11 @@
 
 #### First we will work on master node and then we will creat the worker node
 
-#### FOR EASY Installation we have create the sh file. Just download them and run them 
+#### FOR EASY Installation we have create the sh file. Just clone the git repo in master node by run the command
 
-#### First go to Master by using the comand
+    git clone https://github.com/naimul3070/kubernatis.git
+
+#### Go to Master by using the comand
 
     sudo su -
 
@@ -68,22 +74,16 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
  
 #### now copy the token and run to the worker node, 
 
-### for check run the comand in master node for check the nodes status
+### for check run the command in master node for check the nodes status
     
-kubectl get node
+    kubectl get node
 
 # Troubleshooting
-
 
 #### if the node status in showiing not-ready just enable the docker and turn of the the swap memory of all-nodes
 
     sudo systemctl enable docker.service
     sudo swapoff -a
 
-
 # Happy kubernatis ---- enjoy---
  
-  
-
-
-
