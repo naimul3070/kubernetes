@@ -14,13 +14,9 @@
     git clone https://github.com/naimul3070/kubernatis.git
     
 ### Get into the clone folde by run the command 
-
     ls
-    
 ### and
-    
-    cd kubernatis/
-    
+    cd kubernatis/   
 #### give permisson the .sh file by run the command in (nust first move to the directory)
 
     chmod +x master.sh
