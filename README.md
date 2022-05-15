@@ -4,8 +4,6 @@
 ## linux (Ubunto 20.4.4 LTS
 ## Fresh new OS (without install any service)
 
-### Installation Guide Kubernetes A to Z
-
 ### For Master Node
 ### Install Docker,kubeadm,kubelet,kubectl,Openssh,Nginx,jare,Edit etc/fstab >> swap memory mount location
 
