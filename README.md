@@ -24,6 +24,8 @@
     sudo apt update
     sudo apt upgrade -y
     ./master.sh
+### for check run the command in master node for check the nodes status
+    kubectl get node
 # 1st worker 
 
 #### after installation there will be a token like 
