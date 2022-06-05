@@ -11,7 +11,7 @@
 #### First we will work on master node and then we will creat the worker node
 
 #### FOR EASY Installation we have create the sh file. Just clone the git repo in master node by run the command
-    git clone https://github.com/naimul3070/kubernatis.git   
+    git clone https://github.com/naimul3070/10-min-Installation-guide-kubernetes-Cluster.git
 ### Get into the clone folde by run the command 
     ls
 ### and
