@@ -1,5 +1,5 @@
 ## Welcome to DevOps Learn.
-# ONE CLICK KUBERNETES master and WORKER installation step !!
+# ONE CLICK KUBERNETES master and WORKER NODES installation steps !!
 ## Prerequisites
 ## linux (Ububuntu-20.04.3-live-server-amd64.iso LTS)
 ### For Download Linux <a href="https://old-releases.ubuntu.com/releases/20.04.3/ubuntu-20.04-beta-live-server-amd64.iso" rel="nofollow" style="color:red;">CLICK HERE</a>
