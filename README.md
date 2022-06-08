@@ -33,6 +33,10 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 ## For Worker Node 
 ### FOR EASY Installation JUST run the command in wokrer pc
     git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x worker.sh&&./worker.sh
+    
+### Just Press Y when you IF see this
+
+<img width="419" alt="image" src="https://user-images.githubusercontent.com/50922314/172578341-bbaed7ad-74c7-4b58-b17d-3b3987dbdb1c.png" class="center">
 
 ### If this is the first worker node then just follow the instruton                            
 # FOLLOW==1st worker
