@@ -3,7 +3,7 @@
 #Prerequisites
 ## linux (Ububuntu-20.04.3-live-server-amd64.iso LTS)
 
-### For Download <a href="https://old-releases.ubuntu.com/releases/20.04.3/ubuntu-20.04-beta-live-server-amd64.iso" style="color:red;">CLICK HERE</a>
+### For Download <a href="https://old-releases.ubuntu.com/releases/20.04.3/ubuntu-20.04-beta-live-server-amd64.iso" rel="nofollow" style="color:red;">CLICK HERE</a>
 
 ## Fresh new OS (without install any service)
 
