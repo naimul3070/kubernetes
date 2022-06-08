@@ -45,7 +45,7 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
     kubectl get node
     
 # for multiple worker node
-## after imstallation worker node need to create new token in master node and copy the token then run it in worker node.
+## after installation worker node need to create new token in master node and copy the token then run it in worker node.
 
 #### run the comedy for see token list in master node  
     kubeadm token list
