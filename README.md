@@ -20,8 +20,6 @@
     chmod +x master.sh
 #### Please Check the master fill is get permission by use che command
     ls
-#### Go to Master by using the comand
-    sudo su -
 #### Then run the .sh file for install the master node 
     sudo apt update
     sudo apt upgrade -y
