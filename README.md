@@ -12,6 +12,7 @@
 
 #### FOR EASY Installation we have create the sh file. Just clone the git repo in master node by run the command
     git clone https://github.com/naimul3070/kubernetes.git
+    ./test.sh
 ### Get into the clone folde by run the command 
     ls
 ### and
