@@ -12,11 +12,11 @@
     
 ### Just Press Y when you IF see this
 
-<img width="419" alt="image" src="https://user-images.githubusercontent.com/50922314/172578341-bbaed7ad-74c7-4b58-b17d-3b3987dbdb1c.png">
+<img width="419" alt="image" src="https://user-images.githubusercontent.com/50922314/172578341-bbaed7ad-74c7-4b58-b17d-3b3987dbdb1c.png" class="center">
 
 ### There will be token like image JUST COPY THAT KEEP SOME WHERE FOR next use
 
-<img width="671" alt="image" src="https://user-images.githubusercontent.com/50922314/172582907-59912f27-8e23-4850-b6e9-e6b3bf5ed151.png">
+<img width="671" alt="image" src="https://user-images.githubusercontent.com/50922314/172582907-59912f27-8e23-4850-b6e9-e6b3bf5ed151.png" class="center">
 
 ### for check run the command in master node for check the nodes status
     kubectl get node
