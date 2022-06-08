@@ -6,7 +6,11 @@
 ### For Download <a href="https://old-releases.ubuntu.com/releases/20.04.3/ubuntu-20.04-beta-live-server-amd64.iso" rel="nofollow" style="color:red;">CLICK HERE</a>
 
 ## For Master Node
-#### FOR EASY Installation just Run the command
+#### FOR EASY Installation just Run the command in master PC USING ROOT USER
+### For Root user use the command
+
+    sudo su
+### and
 
     git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x master.sh&&./master.sh
     
@@ -31,7 +35,11 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 
 ### Just copy and run into worker node after make ready the worker node,
 ## For Worker Node 
-### FOR EASY Installation JUST run the command in wokrer pc
+### FOR EASY Installation JUST run the command in wokrer pc USING ROOT USER
+### For Root user use the command
+
+    sudo su
+### and
     git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x worker.sh&&./worker.sh
     
 ### Just Press Y when you IF see this
