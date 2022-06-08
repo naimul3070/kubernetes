@@ -1,12 +1,12 @@
-## Welcoem to DevOps Learn.
+## Welcome to DevOps Learn.
 
 #Prerequisites
 
 ## linux (Ububuntu-20.04.3-live-server-amd64.iso LTS)
 ### For Download <a href="https://old-releases.ubuntu.com/releases/20.04.3/ubuntu-20.04-beta-live-server-amd64.iso" rel="nofollow" style="color:red;">CLICK HERE</a>
-#
+
 ## For Master Node
-#### FOR EASY Installation just Run the commadn
+#### FOR EASY Installation just Run the command
 
     git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x master.sh&&./master.sh
     
@@ -34,7 +34,7 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 ### FOR EASY Installation JUST run the command in wokrer pc
     git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x worker.sh&&./worker.sh
 
-### If this is the first worker node then just follow the instracton in  
+### If this is the first worker node then just follow the instruton                            
 # FOLLOW==1st worker
 
 #### Check in master node by the command 
@@ -43,7 +43,7 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 # for multiple worker node
 ## after imstallation worker node need to create new token in master node and copy the token then run it in worker node.
 
-#### run the comadn for see token list in master node 
+#### run the comedy for see token list in master node  
     kubeadm token list
 #### for create new token 
     sudo kubeadm token create --print-join-command
@@ -58,5 +58,4 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
     sudo systemctl enable docker.service
     sudo swapoff -a
 
-# Happy kubernatis ---- enjoy---
- 
+# Happy kubernetes ---- enjoy---
