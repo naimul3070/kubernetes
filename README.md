@@ -35,7 +35,7 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
     git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x worker.sh&&./worker.sh
 
 ### If this is the first worker node then just follow the instracton in  
-# ==1st worker
+# FOLLOW==1st worker
 
 #### Check in master node by the command 
     kubectl get node
