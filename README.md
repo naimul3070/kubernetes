@@ -17,7 +17,9 @@
 ### and
     cd kubernetes/
 #### give permisson the .sh file by run the command in (nust first move to the directory)
-    chmod +x master.sh   
+    chmod +x master.sh
+#### Please Check the master fill is get permission by use che command
+    ls
 #### Go to Master by using the comand
     sudo su -
 #### Then run the .sh file for install the master node 
