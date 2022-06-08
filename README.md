@@ -11,7 +11,7 @@
 #### First we will work on master node and then we will creat the worker node
 
 #### FOR EASY Installation we have create the sh file. Just clone the git repo in master node by run the command
-    git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x test.sh&&./test.sh
+    git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x master.sh&&./test.sh
     
 #### Just Press Y when you see this
 
