@@ -2,7 +2,7 @@
 # ONE CLICK KUBERNETES master and WORKER installation step !!
 ## Prerequisites
 ## linux (Ububuntu-20.04.3-live-server-amd64.iso LTS)
-### For Download <a href="https://old-releases.ubuntu.com/releases/20.04.3/ubuntu-20.04-beta-live-server-amd64.iso" rel="nofollow" style="color:red;">CLICK HERE</a>
+### For Download Linux <a href="https://old-releases.ubuntu.com/releases/20.04.3/ubuntu-20.04-beta-live-server-amd64.iso" rel="nofollow" style="color:red;">CLICK HERE</a>
 
 ## For Master Node
 #### FOR EASY Installation just Run the command in master PC USING ROOT USER
