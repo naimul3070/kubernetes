@@ -1,7 +1,7 @@
 ## Welcoem to DevOps Learn.
 
 #Prerequisites
-## linux (Ubunto 20.4.4 LTS
+## linux (Ububuntu-20.04.3-live-server-amd64.iso LTS)
 ## Fresh new OS (without install any service)
 
 ### For Master Node
