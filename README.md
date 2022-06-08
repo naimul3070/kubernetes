@@ -39,7 +39,6 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 ### For Root user use the command
 
     sudo su
-### and
     git clone https://github.com/naimul3070/kubernetes.git&&cd kubernetes/&&chmod +x worker.sh&&./worker.sh
     
 ### Just Press Y when you IF see this
