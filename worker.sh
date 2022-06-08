@@ -28,4 +28,3 @@ apt-get install -y apt-transport-https
 apt-get install kubelet 
 apt-get install kubeadm
 apt-get install kubectl
-
