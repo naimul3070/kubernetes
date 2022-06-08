@@ -15,7 +15,7 @@
 ### Get into the clone folde by run the command 
     ls
 ### and
-    cd kubernatis/   
+    cd kubernetes/
 #### give permisson the .sh file by run the command in (nust first move to the directory)
     chmod +x master.sh   
 #### Go to Master by using the comand
