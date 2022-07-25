@@ -47,7 +47,7 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 # for multiple worker node
 ## after installation worker node need to create new token in master node and copy the token then run it in worker node.
 
-#### run the comedy for see token list in master node  
+#### run the command for see token list in master node  
     kubeadm token list
 #### for create new token 
     sudo kubeadm token create --print-join-command
