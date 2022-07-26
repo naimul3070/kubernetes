@@ -61,5 +61,30 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 
     sudo systemctl enable docker.service
     sudo swapoff -a
+# Metal llb
+#### clone the library of metal LLB and namespace
+
+    kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
+    kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
+    
+ #### Need to add ip for loadbalancing
+ 
+ ## Create a YAML file accordingly, and deploy it:
+ 
+    apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: metallb-system
+  name: config
+data:
+  config: |
+    address-pools:
+    - name: default
+      protocol: layer2
+      addresses:
+      - <ip-address-range-start>-<ip-address-range-stop>
+      
+# Excicute the command for apply
+    
 
 # Happy kubernetes ---- enjoy---
