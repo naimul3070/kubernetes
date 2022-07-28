@@ -55,7 +55,7 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 
 ### for check run the command in master node for check the nodes status
     kubectl get node
-# Troubleshooting
+# (If the Node is showing not ready) Troubleshooting
 
 #### if the node status in showiing not-ready just enable the docker and turn of the the swap memory of all-nodes
 
