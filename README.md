@@ -61,15 +61,17 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 
     sudo systemctl enable docker.service
     sudo swapoff -a
-# Metal llb
+# Metal llb ( metall llb is for assing a public ip where all the application can be access easily and this ip will be hold the main domain)
+
 #### clone the library of metal LLB and namespace
 
     kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml
     kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
     
  #### Need to add ip for loadbalancing
- 
- ## Create a YAML file accordingly, and deploy it:
+ ## Create a YAML file name as metallb-configmap.yaml (its not mendotory)
+    nano metallb-configmap.yaml
+ ## copy all the file in yaml (in the braket we need to assing the ip for load balancing):
  
       apiVersion: v1
     kind: ConfigMap
