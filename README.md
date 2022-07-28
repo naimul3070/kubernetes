@@ -104,6 +104,19 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/50922314/181494706-41b936f6-5fe7-479f-9d1b-6119544b64fe.png">
 
 # If you see this images your helm installation done
+
+# In this step we will install nginx and cleate a new namesapce name as staging and will configur context and ingress controler to that spesific name spaace
+
+    chmod +x nginxingressaddstaging.sh&&./nginxingressaddstaging.sh
+# Now check the name space and ingress-nginx resources
+
+#### For name sapce
+    kubectl get ns
+#### For ingress resources
+    kubectl -n staging get all 	
+    kubectl get svc
+#### For check the pods
+    kubectl get pods
     
-        
+# Now your Environment is Ready for pod deployment.You need to add ssl for if your configuring this all in your local server)
 # Happy kubernetes ---- enjoy---
