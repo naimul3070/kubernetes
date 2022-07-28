@@ -73,18 +73,18 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
     nano metallb-configmap.yaml
  ## copy all the file in yaml (in the braket we need to assing the ip for load balancing):
  
-      apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      namespace: metallb-system
-      name: config
-    data:
-      config: |
-        address-pools:
-        - name: default
-          protocol: layer2
-          addresses:
-          - <ip-address-range-start>-<ip-address-range-stop>
+        apiVersion: v1
+        kind: ConfigMap
+        metadata:
+          namespace: metallb-system
+          name: config
+        data:
+          config: |
+            address-pools:
+            - name: default
+              protocol: layer2
+              addresses:
+              - <ip-address-range-start>-<ip-address-range-stop>
       
 # Excicute the command for apply
 
