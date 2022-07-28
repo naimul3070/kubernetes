@@ -100,7 +100,8 @@ kubeadm join 10.209.99.220:6443 --token yn0e71.7fy4apmhg060nuxp \
 <img width="475" alt="image" src="https://user-images.githubusercontent.com/50922314/172037458-37c6e7af-16e8-4817-92c4-e8a21dd4ed83.png">
 #### Now check the repo lis by using the comand
         helm -n staging  repo list
-![image](https://user-images.githubusercontent.com/50922314/181494706-41b936f6-5fe7-479f-9d1b-6119544b64fe.png)
+        
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/50922314/181494706-41b936f6-5fe7-479f-9d1b-6119544b64fe.png">
 
 # If you see this images your helm installation done
     
