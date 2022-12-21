@@ -16,8 +16,6 @@ apt-get update
 
 apt-get install -y ebtables ethtool
 
-sudo apt install -y containerd
-
 apt-get install -y docker.io
 
 cat <<EOF >/etc/docker/daemon.json
