@@ -1,4 +1,5 @@
 
+
 apt-get install -y curl openssh-server
 
 
@@ -15,7 +16,6 @@ apt-get update
 
 
 apt-get install -y ebtables ethtool
-
 apt-get install -y docker.io
 
 cat <<EOF >/etc/docker/daemon.json
@@ -28,7 +28,7 @@ systemctl daemon-reload
 systemctl restart docker
 
 apt-get install -y apt-transport-https
-apt-get install -y kubelet kubeadm kubectl
+apt-get install -qy kubelet=1.25.3-00 kubeadm=1.25.3-00 kubectl=1.25.3-00
 
 apt-mark hold docker.io kubelet kubeadm kubectl
 
